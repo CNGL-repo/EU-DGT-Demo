@@ -1,0 +1,17 @@
+Usage: 
+python dgt_converter_lxml.py <path to directory containing tmx files>
+
+Input: 
+.tmx file
+Output: 
+.csv, .csvw, .rdf 
+
+Description: 
+Should be run over a directory of TMX files. The script should also convert any tmx file inside nested directories.
+
+The CSV files are created from the TMX files using predefined headers.
+LXML is used to parse the TMX file. 
+The script uses a dictionary as a template for the CSVW file.
+Once the CSV and CSVW files are created, they are passed to the RDF_FROM_CSVW script which generated an rdf file. 
+
+
